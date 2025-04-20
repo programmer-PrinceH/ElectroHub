@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Account - ElectroHub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    body {
+      background-color: #121821;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .account-page {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .account-header {
+      background-color: #1f2937;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .account-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ff6600;
+    }
+
+    .account-header h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    .account-header p {
+      margin: 5px 0 0;
+      color: #ccc;
+    }
+
+    .account-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .account-card {
+      background-color: #1a222d;
+      padding: 20px;
+      border-radius: 10px;
+      transition: background 0.2s;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    .account-card:hover {
+      background-color: #2c3542;
+    }
+
+    .account-card i {
+      font-size: 1.5em;
+      color: #ff6600;
+      margin-bottom: 10px;
+    }
+
+    .account-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .account-card p {
+      color: #aaa;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="account-page">
+    <div class="account-header">
+      <img src="1.jpg" alt="User Avatar" />
+      <div>
+        <h2>Prince Ni</h2>
+        <p>niprince@email.com</p>
+      </div>
+    </div>
+
+    <div class="account-options">
+      <div class="account-card">
+        <i class="fas fa-box"></i>
+        <h3>Your Orders</h3>
+        <p>Track, return, or reorder purchases.</p>
+      </div>
+
+      <div class="account-card">
+        <i class="fas fa-user-cog"></i>
+        <h3>Login & Security</h3>
+        <p>Change email, password, or mobile number.</p>
+      </div>
+
+      <div class="account-card">
+        <i class="fas fa-crown"></i>
+        <h3>Prime</h3>
+        <p>Manage your Prime membership.</p>
+      </div>
+
+      <div class="account-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Your Addresses</h3>
+        <p>Edit billing or delivery addresses.</p>
+      </div>
+
+      <div class="account-card">
+        <i class="fas fa-credit-card"></i>
+        <h3>Payment Options</h3>
+        <p>Manage saved cards and payment settings.</p>
+      </div>
+      <a href="log in.html" class="account-card-link">
+      <div class="account-card">
+        <i class="fas fa-sign-out-alt"></i>
+        <h3> Sign Out</h3>
+        <p>Log out of your ElectroHub account.</p>
+      </div>
+    </a>
+    </div>
+  </div>
+
+</body>
+</html>

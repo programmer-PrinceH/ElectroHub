@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Login/Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <form id="login-form" class="active">
+      <h2>Login</h2>
+      <div class="input-field">
+        <input type="text" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#" onclick="toggleForm('register')">Register</a></p>
+      </div>
+    </form>
+    <form id="register-form">
+      <h2>Register</h2>
+      <div class="input-field">
+        <input type="text" required>
+        <label>Enter your name</label>
+      </div>
+      <div class="input-field">
+        <input type="email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Create password</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Confirm password</label>
+      </div>
+      <button type="submit">Register</button>
+      <div class="register">
+        <p>Already have an account? <a href="#" onclick="toggleForm('login')">Login</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function toggleForm(type) {
+      const loginForm = document.getElementById("login-form");
+      const registerForm = document.getElementById("register-form");
+      if (type === "register") {
+        loginForm.style.display = "none";
+        registerForm.style.display = "flex";
+      } else {
+        registerForm.style.display = "none";
+        loginForm.style.display = "flex";
+      }
+    }
+
+    document.getElementById("register-form").style.display = "none";
+  </script>
+</body>
+</html>

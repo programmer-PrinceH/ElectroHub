@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ElectroHub</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <script src="fun.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body>
+  <div class="side-menu">
+    <ul>
+      <li><i class="fas fa-home"></i><span>Home</span></li>
+      <li>
+        <a href="categories.html">
+          <i class="fas fa-th-large"></i><span>Categories</span>
+        </a>
+      </li>
+      <li>
+        <a href="favorites.html">
+          <i class="fas fa-heart"></i><span>Favorites</span>
+        </a>
+      </li>
+      
+      <li onclick="window.location.href='account.html'">
+        <i class="fas fa-user"></i><span>Account</span>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="main-content">
+    <header>
+      <div class="logo">ElectroHub</div>
+    </header>
+
+    <main>
+  
+  <header>
+    <div class="cart" id="cart">
+  Cart (<span id="cart-count">4</span>)
+</div>
+    <div class="top-bar">
+      <div class="logo">ElectroHub</div>
+      <nav>
+        <a href="#">HOME</a>
+      </nav>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    
+  </header>
+
+  <section class="categories">
+    <div class="category">
+      <img src="gsmarena_004.jpg" alt="iPhones" />
+      <p><em>Iphones</em></p>
+    </div>
+    <div class="category">
+      <img src="gsmarena_028.jpg" alt="Samsungs" />
+      <p><em>Samsungs</em></p>
+      
+    </div>
+    <div class="category">
+      <img src="gsmarena_013.jpg" alt="Google Pixels" />
+      <p><em>Google Pixels</em></p>
+      
+    </div>
+     <div class="category">
+      <img src="gsmarena_004.jpg" alt="MacBook" />
+      <p><em>MacBook</em></p>
+    </div>
+    <div class="category">
+      <img src="gsmarena_028.jpg" alt="HP" />
+      <p><em>HP</em></p>
+    </div>
+    <div class="category">
+      <img src="gsmarena_013.jpg" alt="Google Pixels" />
+      <p><em>Lenovo</em></p>
+    </div>
+    
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="gsmarena_002 (1).jpg" alt="iPhone 16 Pro" />
+      <p class="product-name">iPhone 16</p>
+      <p class="product-price">1,700 USD</p>
+      <span class="heart"><i class="far fa-heart"></i></span>
+      <a href="buy.html">
+        <button class="add-to-cart">Buy</button>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="gsmarena_002.jpg" alt="Samsung S25 Ultra" />
+      <p class="product-name">Samsung Galaxy S25 ultra</p>
+      <p class="product-price">1,750 USD</p>
+      <span class="heart"><i class="far fa-heart"></i></span>
+      <a href="buy.html">
+        <button class="add-to-cart">Buy</button>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="gsmarena_011.jpg" alt="MacBook Pro M4" />
+      <p class="product-name">MacBook Pro M4</p>
+      <p class="product-price">2,500 USD</p>
+      <span class="heart"><i class="far fa-heart"></i></span>
+      <a href="buy.html">
+        <button class="add-to-cart">Buy</button>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="gsmarena_011.jpg" alt="Samsung S21 Ultra 5G" />
+      <p class="product-name">Samsung S21 Ultra 5G</p>
+      <p class="product-price">500 USD</p>
+      <span class="heart"><i class="far fa-heart"></i></span>
+      <a href="buy.html">
+        <button class="add-to-cart">Buy</button>
+      </a>
+    </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="iPhone 16 Pro" />
+    <p class="product-name">iPhone 16 pro</p>
+    <p class="product-price">1,700 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="Samsung S25 Ultra" />
+    <p class="product-name">Samsung Galaxy S25 ultra</p>
+    <p class="product-price">1,750 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="MacBook Pro M4" />
+    <p class="product-name">MacBook Pro M4</p>
+    <p class="product-price">2,500 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="Samsung S21 Ultra 5G" />
+    <p class="product-name">Samsung S21 Ultra 5G</p>
+    <p class="product-price">500 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="Google Pixel 7 Pro" />
+    <p class="product-name">Google Pixel 7 Pro</p>
+    <p class="product-price">899 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="iPad Pro 13-inch" />
+    <p class="product-name">iPad Pro 13"</p>
+    <p class="product-price">1,199 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="AirPods Max" />
+    <p class="product-name">AirPods Max</p>
+    <p class="product-price">549 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="gsmarena_011.jpg" alt="Galaxy Watch 6" />
+    <p class="product-name">Galaxy Watch 6</p>
+    <p class="product-price">399 USD</p>
+    <span class="heart"><i class="far fa-heart"></i></span>
+    <a href="buy.html">
+      <button class="add-to-cart">Buy</button>
+    </a>n 
+  </main>
+  </div>
+  </div>
+  </section>
+  <footer>
+    <p>PH. &copy; 2025</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Favorites - ElectroHub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    body {
+      background-color: #121821;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+
+    .page-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .favorites-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .favorite-card {
+      background-color: #1a222d;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+
+    .favorite-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .favorite-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .favorite-card p {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <h1>My Favorites</h1>
+    <div class="favorites-grid">
+      <div class="favorite-card">
+        <img src="iphone16pro.png" alt="iPhone 16 Pro">
+        <h3>iPhone 16 Pro</h3>
+        <p>$1700</p>
+      </div>
+      <div class="favorite-card">
+        <img src="macbook.png" alt="MacBook Pro">
+        <h3>MacBook Pro M4</h3>
+        <p>$2500</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
